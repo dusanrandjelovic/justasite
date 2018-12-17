@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', sans-serif;
+  background: -webkit-linear-gradient(lightgreen, gray);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(lightgray, darkgray);
+  width: 100%;
+}
+header nav a {
+  color: green;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid green;
+  text-align: center;
+}
+header nav a:hover {
+  color: white;
+  background: -webkit-linear-gradient(lightgreen, darkgreen);
+}
+.pozadina {
+  background-image: url("pozadina11.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  margin-top: -26px;
+}
+.pozadina h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 56px;
+}
+.pozadina p {
+  width: 90%;
+  margin: 3% auto;
+  line-height: 1.5em;
+}
+main {
+  margin: 3% 5%;
+}
+article img {
+  border-radius: 2%;
+  border: 1px solid gray;
+}
+article img:hover {
+  opacity: 0.8;
+
+}
+.sekcija1 {
+  background-image: url("pozadinasova.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-attachment: fixed;
+}
+.sekcija1 h5 {
+  color: white;
+  margin-left: 2%;
+}
+.sekcija1 button {
+  padding: 10px;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  margin-right: 2%;
+}
+.sekcija1 button:hover {
+  cursor: pointer;
+  color: black;
+  background: -webkit-linear-gradient(snow, mintcream);
+}
+h2 {
+  text-align: center;
+}
+.sekcija2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+ .slika {
+  height: 70px;
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+footer {
+  display: flex;
+  background: -webkit-linear-gradient(gray, lightgreen);
+  padding: 3% 5%;
+  flex-direction: column;
+}
+.col-sm-3 {
+  padding: 1%;
+}
+.col-sm-3 a {
+  color: black;
+  padding-right: 8px;
+  text-decoration: none;
+}
+.col-sm-3 a:hover {
+  color: red;
+}
+@media (min-width: 748px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 5%;
+  }
+  header div h1 {
+    margin-left: 1%;
+  }
+  header div h4 {
+    margin-left: 2%;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  header nav a {
+    border-bottom: none;
+  }
+  .pozadina {
+    margin-top: -30px;
+  }
+  .pozadina h1 {
+    padding-left: 7%;
+    text-align: left;
+    border-bottom: 2px solid black;
+    letter-spacing: 0.02em;
+    font-size: 46px;
+  }
+  .pozadina p {
+    width: 45%;
+    margin: 13% 0 3% 7%;
+  }
+  main {
+    display: flex;
+  }
+  article {
+    width: 50%;
+    padding: 2%;
+  }
+  article p {
+    line-height: 1.5em;
+  }
+  article img {
+    display: block;
+    margin: auto;
+
+  }
+  .sekcija1 {
+    height: 120px;
+  }
+  .sekcija1 h5 {
+    background: black;
+    padding: 2px 0;
+    margin-left: 0;
+  }
+  .sekcija1 button {
+    margin-right: 0;
+    padding: 10px;
+  }
+  h2 {
+    padding-top: 4%;
+  }
+.sekcija2 {
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+footer{
+  flex-direction: row;
+}
+.col-sm-3 {
+  line-height: 1.5em;
+}
+}
